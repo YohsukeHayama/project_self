@@ -7,9 +7,6 @@ from PIL import Image
 
 st.title('streamlitサンプル')
 
-st.write('DataFrame')
-
-#%%
 df = pd.DataFrame(
     np.random.rand(20,3),
     columns=["a", "c", "s"]
@@ -37,6 +34,8 @@ for i in range(100):
     latest_iteration.text(f'iteration {i+1}')
     bar.progress(i + 1)
     time.sleep(0.1)
+
+
 
 # st.table(df.style.highlight_max(axis=0))
 # st.area_chart(df)
